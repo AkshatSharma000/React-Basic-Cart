@@ -2,14 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Logic from './logic';
+import Home from './Components/Home'
+import Logic from './Components/logic';
+import Products from './Components/Products';
+import ProductInfo from './Components/ProductInfo';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider , createBrowserRouter } from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+  { path:"/", element:<App />, 
+    children:[
+      { path: "/", element: <Home /> },
+      { path:"/cart",element:<Logic /> },
+      { path:"/products",element:<Products /> },
+      { path:"/products/:productId",element:<ProductInfo /> }
+    ]
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Logic />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
