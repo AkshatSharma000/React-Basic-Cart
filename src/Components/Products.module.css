@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&family=Poppins:wght@900&display=swap');
+
+.image{
+    width: 210px;
+    height: 270px;
+}
+
+.cardItem{
+    height: 200px;
+}
+
+.cardTitle{
+    font-size: 30px;
+    font-family: 'Londrina Solid',sans-serif;
+}
+
+.cardText{
+    text-align: justify;
+    text-justify: inter-word;
+}

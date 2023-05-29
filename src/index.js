@@ -8,13 +8,18 @@ import Products from './Components/Products';
 import ProductInfo from './Components/ProductInfo';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider , createBrowserRouter } from 'react-router-dom';
+import { authenticator } from './util/authenticator';
+import { Login } from './authentication/Login';
+import { Register } from './authentication/Register';
 
 
 const router = createBrowserRouter([
   { path:"/", element:<App />, 
     children:[
       { path: "/", element: <Home /> },
-      { path:"/cart",element:<Logic /> },
+      { path:"/cart",element:<Logic />,loader:authenticator},
+      { path:"/login",element:<Login /> },
+      { path:"/register",element:<Register /> },
       { path:"/products",element:<Products /> },
       { path:"/products/:productId",element:<ProductInfo /> }
     ]

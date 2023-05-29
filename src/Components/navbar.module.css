@@ -1,0 +1,23 @@
+.navbar {
+    background-image: linear-gradient(to bottom right, white,rgba(178, 178, 178, 0.292));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* padding-top: 10px; */
+}
+
+.navbarBrand {
+    font-size: 30px;
+}
+
+
+
+.navButton {
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+}
+
+.navMain{
+    position: relative;
+    top: 0;
+}

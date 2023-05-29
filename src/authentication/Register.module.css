@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&family=Poppins:wght@900&display=swap');
+
+
+.formControl:not(select) {
+    padding: 0.5rem 0.5rem;
+}
+
+select.formControl {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.formControl::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.formControl:focus {
+    box-shadow: none;
+}
+
+.heading{
+    font-family: 'Londrina Solid',sans-serif;
+    font-weight: 300;
+}
+
+.pwdError{
+    font-size: 12px;
+    margin-left: 5px;
+}

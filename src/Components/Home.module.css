@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&family=Poppins:wght@900&display=swap');
+
+.cardItem{
+    width: 30px;
+}
+
+.mainImage {
+    /* min-width: 70%;
+    max-width: 90%; */
+    width: 80%;
+    flex: 1;
+    max-width: 500px;
+    min-width:auto;
+}
+
+.mainText {
+    /* min-width: 60%; */
+    /* max-width: ; */
+    /* width: auto; */
+    flex: 2;
+    margin-right: 5px;
+}
+
+.main {
+    /* background-color: aliceblue; */
+    min-height:580px;
+    align-items:center;
+    /* display: block; */
+    display: grid;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(205, 173, 253));
+}
+
+.mainRow {
+    /* padding-top: 100px; */
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Proza Libre', sans-serif; */
+    font-size: 11vh;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.highlightedText {
+    background-color: chartreuse;
+    /* font-style: italic; */
+}
+
+.smallText {
+    font-size: 3vmin;
+    font-family:monospace;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes animatedBackground1 {
+	0% { background-position: 0 0; }
+	100% { background-position: 900px 0; }
+}
+
+.nonFictionDiv {
+    background-image: url('/public/images/Best-Indian-Non-Fiction_01.jpg');
+    background-size: contain;
+    min-height: 700px;
+    align-items: center;
+    display: flex;
+    animation: animatedBackground1 30s linear infinite;
+}
+
+@keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -900px 0; }
+}
+
+.fictionDiv {
+    background-image: url('/public/images/Best-Indian-Fiction-2022_02.jpg');
+    background-size: contain;
+    min-height: 700px;
+    align-items: center;
+    display: flex;
+    animation: animatedBackground 30s linear infinite;
+}
+
+.fictionText{
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 10px;
+    font-family: 'Londrina Solid',sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: white;
+    backdrop-filter: blur(20px);
+}
+
+.fictionPara{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.fictionBtn{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.fictionBtn:hover{
+    letter-spacing: 2px;
+}
+
+.bestsellerDiv{
+    min-height: 700px;
+    background-color:beige;
+}
+
+.bestsellerText{
+    font-size: 9vh;
+    font-family: 'Londrina Solid';
+    font-weight: 300;
+    padding-left: 100px;
+}
+
+.bestsellerHeading{
+    font-size: 11vmin;
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+
+.bestsellerImg{
+    /* max-width: 900px; */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
